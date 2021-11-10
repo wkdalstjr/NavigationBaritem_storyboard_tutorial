@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C6h-9L-3zD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="lgc-F6-Hyl">
+            <objects>
+                <navigationController id="C6h-9L-3zD" customClass="ViewController" customModule="NavigationBaritem_storyboard_tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Jg-Ao-sFr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vuH-HK-Lad" kind="relationship" relationship="rootViewController" id="HaA-ER-bb4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7OS-uJ-ujS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-788" y="141"/>
+        </scene>
+        <!--홈-->
+        <scene sceneID="8cY-aA-0kD">
+            <objects>
+                <viewController id="vuH-HK-Lad" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GBF-UV-4Dd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="N7X-gc-Yt6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="홈" id="eef-59-eVb">
+                        <barButtonItem key="leftBarButtonItem" title="프로필" image="person.fill" catalog="system" id="A3r-Gw-tOe">
+                            <connections>
+                                <segue destination="Rtr-er-EzM" kind="show" id="hiB-Ez-hqG"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="메세지" image="message.fill" catalog="system" id="Yqr-CZ-oh9">
+                            <connections>
+                                <segue destination="E7S-h6-ltY" kind="show" id="bsL-HH-ma5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IqW-JU-V9C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="141"/>
+        </scene>
+        <!--메세지-->
+        <scene sceneID="f9Z-R3-a3k">
+            <objects>
+                <viewController id="E7S-h6-ltY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iyM-P4-e2u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="S2l-RV-ScX"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="메세지" id="9Hn-XB-xXj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ta-Bp-w4B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783" y="636"/>
+        </scene>
+        <!--프로필-->
+        <scene sceneID="dhC-Su-nMB">
+            <objects>
+                <viewController id="Rtr-er-EzM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wyF-Kc-329">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ja6-09-NYT"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="프로필" id="sUy-Lr-78D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxB-tC-eZt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783" y="-38"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="message.fill" catalog="system" width="64" height="56"/>
+        <image name="person.fill" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
